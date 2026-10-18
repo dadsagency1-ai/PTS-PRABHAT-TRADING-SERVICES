@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,23 +7,29 @@
 <meta name="theme-color" content="#07100b">
 <title>PTS Prabhat Trading Services</title>
 
-<!-- ================= META PIXEL =================
-     Replace YOUR_PIXEL_ID with your Meta Pixel ID.
-================================================== -->
+<!-- META PIXEL -->
 <script>
 const META_PIXEL_ID = "2316565725912462";
 
 if (META_PIXEL_ID && META_PIXEL_ID !== "YOUR_PIXEL_ID") {
   !function(f,b,e,v,n,t,s){
-    if(f.fbq)return;n=f.fbq=function(){
+    if(f.fbq)return;
+    n=f.fbq=function(){
       n.callMethod ? n.callMethod.apply(n,arguments) : n.queue.push(arguments)
     };
     if(!f._fbq)f._fbq=n;
-    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];
-    t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
+    n.push=n;
+    n.loaded=!0;
+    n.version='2.0';
+    n.queue=[];
+    t=b.createElement(e);
+    t.async=!0;
+    t.src=v;
+    s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)
-  }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+  }(window, document, 'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+
   fbq('init', META_PIXEL_ID);
   fbq('track', 'PageView');
 }
@@ -119,7 +126,10 @@ h1 span{color:#18b866}
   box-shadow:0 10px 28px rgba(14,177,91,.25);
   transition:.2s ease;
 }
-.cta:hover{transform:translateY(-2px);box-shadow:0 14px 32px rgba(14,177,91,.34)}
+.cta:hover{
+  transform:translateY(-2px);
+  box-shadow:0 14px 32px rgba(14,177,91,.34)
+}
 .cta:active{transform:scale(.98)}
 .center-cta{
   margin:20px 0;
@@ -185,7 +195,8 @@ h1 span{color:#18b866}
 <main class="wrap">
   <section class="card">
 
-    <img class="logo" src="pts-logo.jpg" alt="PTS Prabhat Trading Services">
+    <img class="logo" src="pts-logo.jpg"
+         alt="PTS Prabhat Trading Services">
 
     <div class="badge">📈 STOCK MARKET COMMUNITY</div>
 
@@ -205,7 +216,7 @@ h1 span{color:#18b866}
 
     <!-- TELEGRAM BUTTON #1 -->
     <a class="cta telegram-btn"
-       href="https://https://t.me/+XTr6LwInKNxhNmI1"
+       href="https://t.me/+XTr6LwInKNxhNmI1"
        target="_blank"
        rel="noopener noreferrer">
       🚀 Join Free Telegram Community
@@ -214,7 +225,7 @@ h1 span{color:#18b866}
     <!-- TELEGRAM BUTTON #2 - CENTER -->
     <div class="center-cta">
       <a class="cta telegram-btn"
-         href="https://https://t.me/+XTr6LwInKNxhNmI1"
+         href="https://t.me/+XTr6LwInKNxhNmI1"
          target="_blank"
          rel="noopener noreferrer">
         📲 Join Telegram — Free Access
@@ -223,7 +234,7 @@ h1 span{color:#18b866}
 
     <!-- TELEGRAM BUTTON #3 -->
     <a class="cta telegram-btn"
-       href="https://https://t.me/+XTr6LwInKNxhNmI1"
+       href="https://t.me/+XTr6LwInKNxhNmI1"
        target="_blank"
        rel="noopener noreferrer">
       🔔 Get Community Updates
@@ -250,16 +261,17 @@ h1 span{color:#18b866}
   <div class="spacer"></div>
 </main>
 
-<!-- OPTIONAL STICKY MIDDLE/BOTTOM CTA -->
+<!-- STICKY BOTTOM TELEGRAM BUTTON -->
 <div class="sticky">
   <a class="cta telegram-btn"
-     href="https://https://t.me/+XTr6LwInKNxhNmI1"
+     href="https://t.me/+XTr6LwInKNxhNmI1"
      target="_blank"
      rel="noopener noreferrer">
     🚀 Join Free Telegram
   </a>
 </div>
 
+<!-- TELEGRAM LEAD TRACKING -->
 <script>
 document.querySelectorAll(".telegram-btn").forEach(function(btn){
   btn.addEventListener("click", function(){
@@ -270,5 +282,7 @@ document.querySelectorAll(".telegram-btn").forEach(function(btn){
   });
 });
 </script>
+
 </body>
 </html>
+```
